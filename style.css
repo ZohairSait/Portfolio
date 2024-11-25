@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size:25px !important;
+    color: black;
+}
+
+
+
+.nav-link{
+    
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: white !important;
+    
+}
+
+.main{
+    margin-top: 63px; /* Increase this value until the section is fully visible */
+    background-image: url('5.png');
+    background-position: center; /* Position the image on the right side */
+    background-size: cover; /* Ensure the entire image fits without stretching */
+    background-repeat:no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make sure the image covers the full height of the viewport */
+    width: 100%;
+} 
+
+
+
+
+.main h3{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main h6{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+    
+    
+}
+.bt1{
+    width: 90px !important;
+    padding: 5px !important; /* Adjust padding as needed */
+    background-color:rgb(233,20,109);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.bt1:hover{
+    background-color: rgb(202, 18, 95);
+    
+}
+
+.bt2{
+    width: 90px !important;
+    padding: 5px !important; /* Adjust padding as needed */
+    background-color:transparent;
+    color:rgb(233,20,109);
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid rgb(233,20,109) !important;;
+}
+.bt2:hover{
+    background-color: rgb(233,20,109);
+    color: white;
+}
+
+
+.about h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+.progress{
+    background-color: gray !important;
+    -webkit-box-shadow: 1px -3px 176px -97px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -3px 176px -97px rgba(0,0,0,0.75);
+box-shadow: 1px -3px 176px -97px rgba(0,0,0,0.75);
+}
+
+
+.progress-bar {
+    transition: width 2s ease-out !important;
+}
+
+
+.btn1 {
+    
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.btn1:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.btn2{
+    height:40px;
+    width: 110px;
+    border-radius: 5px;
+    color: black;
+    background-color    : whitesmoke;
+}
+
+.btn2:hover{
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}  
+
+.projects h1{
+    font-size: 50px ;
+    font-weight: 900 ;
+}
+
+
+
+
+.card{
+    min-height: 220px;
+    -webkit-box-shadow: -9px 6px 89px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: -9px 6px 89px -15px rgba(0,0,0,0.75);
+box-shadow: -9px 6px 89px -15px rgba(0,0,0,0.75);
+}
+
+.card-title{
+    font-weight: 800;
+    font-size: 20px;
+
+}
+
+.card p{
+    color: grey;
+    
+}
+
+.btnn{
+    background-color: black;
+    color: white;
+    width: 35%;
+    text-decoration: none;
+    border-radius: 5px ;
+    border: 3px solid black;
+    
+}
+
+.btnn:hover{
+    font-size: 20px;
+    background-color: black;
+    color: white  !important;
+}
+
+
+.contact h1{
+    font-size: 50px ;
+    font-weight: 900 ;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;   
+    font-size: 30px;
+    padding: 12px;
+    display: inline-block;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    
+}
+
+.circle:hover{
+    background-color: black;
+    color: lightgrey;
+}
+
+.btn3{
+    color: white;
+    background-color: black ;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 5px ;
+}
+
+.btn3:hover{
+    font-size: 20px;
+    background-color: blue;
+}
