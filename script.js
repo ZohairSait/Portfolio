@@ -127,7 +127,6 @@ updateActiveNav();
 const contactForm = document.querySelector('form[name="contact"]');
 
 contactForm.addEventListener("submit", function (event) {
-
     event.preventDefault();
 
     const formData = new FormData(contactForm);
@@ -139,20 +138,11 @@ contactForm.addEventListener("submit", function (event) {
         },
         body: new URLSearchParams(formData).toString()
     })
-    .then(response => {
-
-        if (response.ok) {
-            window.location.href = "/success.html";
-        } else {
-            alert("Something went wrong. Please try again.");
-        }
-
+    .then(() => {
+        window.location.href = "/success.html";
     })
-    .catch(error => {
-
+    .catch((error) => {
+        console.error("Form submission error:", error);
         alert("Something went wrong. Please try again.");
-        console.error(error);
-
     });
-
 });
