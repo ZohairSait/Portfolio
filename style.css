@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(239, 239, 239);
+}
+
+.main .row {
+    transform: translateY(-100px);
+}
+
+/* ================= NAVBAR ================= */
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px !important;
+    color: white !important;
+}
+
+
+.nav-link {
+
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+
+.nav-link:hover {
+
+    background-color: white;
+    color: black !important;
+
+}
+
+
+.nav-link.active {
+
+    background-color: white;
+    color: black !important;
+
+}
+
+
+
+/* ================= HOME ================= */
+
+
+.main {
+
+    margin-top: 63px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgb(239, 239, 239) 25%,
+            rgba(239, 239, 239, 0.92) 40%,
+            rgba(239, 239, 239, 0.25) 70%,
+            transparent 100%
+        ),
+        url("5.png");
+
+    background-position: center top;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    min-height: 88vh;
+
+    width: 100%;
+
+}
+
+
+.main h3 {
+
+    font-size: 58px;
+
+    font-weight: 700;
+
+}
+
+
+.main h3 small {
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+}
+
+
+.cyber-title {
+
+    color: #0d6efd;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    margin-top: 15px;
+
+}
+
+
+.degree-title {
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    margin-top: 12px;
+
+}
+
+
+.intro-text {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-top: 22px;
+
+}
+
+
+.home-buttons {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.bt1 {
+
+    width: 145px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding: 11px 15px;
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    border: 2px solid #0d6efd;
+
+    text-decoration: none;
+
+}
+
+
+.bt1:hover {
+
+    background-color: #084298;
+
+    color: white;
+
+}
+
+
+.bt2 {
+
+    width: 145px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding: 11px 15px;
+
+    background-color: transparent;
+
+    color: #0d6efd;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    border: 2px solid #0d6efd;
+
+    text-decoration: none;
+
+}
+
+
+.bt2:hover {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+}
+
+
+.resume-btn {
+
+    width: 145px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding: 11px 15px;
+
+    background-color: black;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    border: 2px solid black;
+
+    text-decoration: none;
+
+}
+
+
+.resume-btn:hover {
+
+    background-color: white;
+
+    color: black;
+
+}
+
+
+.opportunity-text {
+
+    margin-top: 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* ================= ABOUT ================= */
+
+
+.about {
+
+    background-color: white;
+
+}
+
+
+.about h2 {
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+}
+
+
+.about-heading {
+
+    color: #0d6efd;
+
+    font-weight: 700;
+
+    margin-top: 20px;
+
+}
+
+
+.about p {
+
+    line-height: 1.7;
+
+}
+
+
+.about-image {
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* ================= SKILLS ================= */
+
+
+.skills-container {
+
+    margin-top: 30px;
+
+}
+
+
+.progress {
+
+    height: 25px !important;
+
+    background-color: gray !important;
+
+    overflow: hidden;
+
+}
+
+
+.progress-bar {
+
+    width: 0;
+
+    transition: width 2s ease-out !important;
+
+}
+
+
+.progress-bar p {
+
+    color: white;
+
+    width: 100%;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* ================= PROJECTS ================= */
+
+
+.projects {
+
+    background-color: rgb(239, 239, 239);
+
+}
+
+
+.projects h1 {
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+}
+
+
+.project-card {
+
+    min-height: 330px;
+
+    border: none !important;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.project-icon {
+
+    height: 100px;
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    font-size: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.card-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.card-title {
+
+    font-weight: 800;
+
+    font-size: 19px;
+
+    margin-top: 5px;
+
+}
+
+
+.card p {
+
+    color: grey;
+
+    line-height: 1.6;
+
+    flex-grow: 1;
+
+}
+
+
+.btnn {
+
+    display: inline-block;
+
+    background-color: black;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    border: 2px solid black;
+
+    font-weight: 600;
+
+}
+
+
+.btnn:hover {
+
+    background-color: white;
+
+    color: black !important;
+
+}
+
+
+
+/* ================= CONTACT ================= */
+
+
+.contact {
+
+    background-color: white;
+
+}
+
+
+.contact h1 {
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+}
+
+
+.contact-details {
+
+    padding-top: 60px;
+
+    padding-bottom: 40px;
+
+}
+
+
+.contact-link {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+
+.contact-link:hover {
+
+    color: black;
+
+}
+
+
+.circle {
+
+    height: 70px;
+
+    width: 70px;
+
+    background-color: lightgrey;
+
+    color: black;
+
+    font-size: 30px;
+
+    padding: 12px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-link:hover .circle {
+
+    background-color: black;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+}
+
+
+.form-control {
+
+    padding: 12px !important;
+
+}
+
+
+.btn3 {
+
+    color: white;
+
+    background-color: black;
+
+    border: none;
+
+    height: 45px;
+
+    width: 150px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+
+.btn3:hover {
+
+    background-color: #0d6efd;
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width: 768px) {
+
+
+    .main {
+
+        background-position: 60% top;
+
+    }
+
+
+    .main h3 {
+
+        font-size: 42px;
+
+    }
+
+
+    .main h3 small {
+
+        font-size: 27px;
+
+    }
+
+
+    .cyber-title {
+
+        font-size: 24px;
+
+    }
+
+
+    .degree-title {
+
+        font-size: 18px;
+
+    }
+
+
+    .intro-text {
+
+        font-size: 16px;
+
+    }
+
+
+    .about h2,
+    .projects h1,
+    .contact h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .about-image {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .home-buttons {
+
+        gap: 10px;
+
+    }
+
+
+    .bt1,
+    .bt2,
+    .resume-btn {
+
+        width: 135px;
+
+        font-size: 14px;
+
+    }
+
+}
