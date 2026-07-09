@@ -121,3 +121,38 @@ window.addEventListener(
 
 
 updateActiveNav();
+
+// ================= NETLIFY FORM SUBMISSION =================
+
+const contactForm = document.querySelector('form[name="contact"]');
+
+contactForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    fetch("/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(formData).toString()
+    })
+    .then(response => {
+
+        if (response.ok) {
+            window.location.href = "/success.html";
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+
+    })
+    .catch(error => {
+
+        alert("Something went wrong. Please try again.");
+        console.error(error);
+
+    });
+
+});
