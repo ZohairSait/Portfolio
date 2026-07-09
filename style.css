@@ -230,18 +230,12 @@ box-shadow: -9px 6px 89px -15px rgba(0,0,0,0.75);
     background-color: blue;
 }
 
-.cyber-text{
-    line-height: 1.4;
+.cyber-text {
+    line-height: 1.6;
     text-decoration: none;
 }
 
-.cyber-text .amp{
-    text-decoration: none;
+.cyber-text .pen {
     display: inline-block;
-    margin-left: 120px;
-}
-
-.cyber-text .pen{
-    display: inline-block;
-    margin-left: 35px;
+    margin-top: 5px;
 }
